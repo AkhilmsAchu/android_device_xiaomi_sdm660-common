@@ -299,6 +299,9 @@
     <string name="config_adaptiveChargingSuspendValue" translatable="false">1</string>
     <string name="config_adaptiveChargingResumeValue" translatable="false">0</string>
 
+    <!-- Screen off delay --> 
+    <integer name="config_screen_off_delay">0</integer>
+    
     <!-- QS System Info -->
     <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone10/temp</string>
     <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
