@@ -100,18 +100,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.bluetooth.library_name=libbluetooth_qti.so \
     vendor.bluetooth.soc=cherokee
 
-# Better Ram
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.fha_enable=true \
-    ro.sys.fw.bg_apps_limit=32 \
-    ro.config.dha_cached_max=16 \
-    ro.config.dha_empty_max=42 \
-    ro.config.dha_empty_init=32 \
-    ro.config.dha_lmk_scale=0.545 \
-    ro.config.dha_th_rate=2.3 \
-    ro.config.sdha_apps_bg_max=64 \
-    ro.config.sdha_apps_bg_min=8
-
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.preview.ubwc=0 \
@@ -189,9 +177,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.sib16_support=1 \
     ro.telephony.default_network=22,22 \
     ro.vendor.use_data_netmgrd=true \
-    persist.vendor.radio.add_power_save=1 \
-    ro.vold.umsdirtyratio=20 \
-    ro.ril.disable.power.collapse=0
+    persist.vendor.radio.add_power_save=1
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     DEVICE_PROVISIONED=1 \
@@ -216,11 +202,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # WFD
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.debug.wfd.enable=0
-
-# Power Saver
-PRODUCT_PROPERTY_OVERRIDES += \
-    power.saving.mode=1 \
-    pm.sleep_mode=1
 
 # Set lmkd options
 PRODUCT_PRODUCT_PROPERTIES += \

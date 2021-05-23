@@ -25,6 +25,9 @@
 $(call inherit-product, $(LOCAL_PATH)/properties.mk)
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
+# Inherit properties (system/build.prop)
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
