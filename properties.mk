@@ -162,7 +162,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.extension_library=libqti-perfd-client.so
+    ro.vendor.extension_library=libqti-perfd-client.so \
+    ro.vendor.perf.scroll_opt=true
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
